@@ -1,0 +1,13 @@
+{
+  "name": "ma-training-platform",
+  "private": true,
+  "packageManager": "pnpm@8.15.8",
+  "scripts": {
+    "preinstall": "node ./scripts/enforce-package-manager.cjs",
+    "dev": "corepack pnpm -r --parallel dev",
+    "build": "corepack pnpm -r build",
+    "lint": "corepack pnpm -r lint",
+    "test": "corepack pnpm -r test",
+    "type-check": "corepack pnpm -r type-check"
+  }
+}
